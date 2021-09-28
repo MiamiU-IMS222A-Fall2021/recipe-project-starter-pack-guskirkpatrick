@@ -1,0 +1,43 @@
+ 
+<style>
+p{
+color: white;
+font: 20px Arial, sans-serif;
+border: 5px solid darkred;
+}
+h1 {
+color: white;
+text-align: center;
+
+background-color: red;
+border: 1px solid #660006;
+margin: 10px 15px 10px 15px;
+padding: 10px 10px 10px 10px;
+font-variant: small-caps;
+font-size: small;
+}
+h2 {
+color: white;
+text-align: center;
+background-color: blue;
+font-size: larger;
+font-style: italic;
+
+margin: 10px 15px 10px 15px;
+padding: 10px 10px 10px 10px;
+}
+h3 {
+    text-align: center;
+    color: white;
+    background-color: navy;
+}
+
+.Ingredients, .Directions{
+    background-color:rgb(114, 152, 165);
+    border: 3px yellowgreen;
+}
+.Container{
+    background-color:lightblue
+
+}
+</style>
