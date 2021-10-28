@@ -3,22 +3,41 @@
 
 <head>
     
-<!-- Head section is for data about the webpage. Enter title, author, and description to match your needs -->
-<link href="/styles.css" rel = "stylesheet" type = "text/css"/>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strawberry Spinach Salad</title>
     <meta name="author" content="Gus Kirkpatrick">
     <meta name="description" content="Farmers Market Recipe">
+    <link href="styles.css" rel = "stylesheet" type = "text/css"/>
+    
+
+    
 
 </head>
-<div class = "Container">
-    <nav><a href = "index.html" >Recipe Book</a>  </nav>
+
+
+
 <body>
 
+    <span class="open-button" onclick="openNav()"> &#9776; other recipes</span>
+  <nav id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+    <ul>    
+        <li><a href = "index.html" >Index page</a></li>
+        <li><a href= "salsa-recipe.html"> Peach Salsa   </a></li>
+        <li><a href= "ratato.html"> Ratatouille </a></li>
+        <li><a href= "spinach-salad.html" >Spinach Salad  </a></li>
+      </ul>
+    
+    
+  </nav>
+<div class = "Container">
+    
+
 <h1>Strawberry Spinach Salad</h1>
-<img src="images/strawberry-salad.jpg" alt="strawberry Salad">
+
+<img style="display: block;" src="images/strawberry-salad.jpg" alt="strawberry Salad">
 
 <p>Strawberries have been known since as far back as the hundredth century, but were never produced commercially or even eaten in large quantities like they are today. Ancient strawberries were much smaller in size, tougher, and lacked flavor. Strawberries as we know them today are all descendants of a cross between the Chilean and Virginia strawberries. Spinach is a leaf from a flowering plant that has over 2,400 species and 3 types: Savoy, Semi-savoy, and flat/smooth leaf. Spinach originated in Persia or modern day Iran and despite it growing better in colder climates was brought to and grown in the Mediterranean. This plant is well known for its vitamin content and even had a cartoon, Popeye, in which the protagonist is empowered by it.
 </p>
@@ -66,6 +85,17 @@
 <p> <a href= "https://www.flickr.com/photos/21993940@N00/3435147507" > "Strawberry + Spinach Salad (Shot B)" by Plat is licensed under CC BY 2.0</a>
 </p>
 </div>
+
+
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
 </body>
 
 

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link href="/styles.css" rel = "stylesheet" type = "text/css"/>
+    <link href="styles.css" rel = "stylesheet" type = "text/css"/>
 <!-- Head section is for data about the webpage. Enter title, author, and description to match your needs -->
     
     <meta charset="utf-8">
@@ -11,12 +11,31 @@
     <meta name="author" content="Gus Kirkpatrick">
     <meta name="description" content="Farmers Market Recipe">
     <link rel="stylesheet" href="styles.css">
-
+    
 </head>
-<div class = Container>
-    <nav><a href = "index.html" >Recipe Book</a>  </nav>
+
+
+
 <body>
 
+    <span class="open-button" onclick="openNav()"> &#9776; other recipes</span>
+  <nav id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+    <ul>    
+        <li><a href = "index.html" >Index page</a></li>
+        <li><a href= "salsa-recipe.html"> Peach Salsa   </a></li>
+        <li><a href= "ratato.html"> Ratatouille </a></li>
+        <li><a href= "spinach-salad.html" >Spinach Salad  </a></li>
+      </ul>
+    
+    
+  </nav>
+    
+  <div class = Container>
+
+
+    
 <h1>Easy Ratatouille</h1>
 <img src="images/ratatouille.jpg" alt="Ratatouille">
 <p> Ratatouille is a traditionally French dish originating from the province of Nice. It is a stewed vegetable dish consisting of tomatoes, eggplant, onions, garlic, zucchini, peppers, and usually some type of leafy greens like spinach. The word ratatouille comes from the Occitan word ratatouille, meaning “to stir up”. Since the late 1700s, this dish was generally a “course stew,” but has evolved to become a layered vegetable dish.</p>
@@ -61,6 +80,17 @@
 
 </p>
 
+
+
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
 </body>
 </div>
 </html>
